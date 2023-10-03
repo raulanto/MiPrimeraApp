@@ -9,14 +9,16 @@
 <ion-content [fullscreen]="true">
   <ion-list>
     <ion-item button *ngFor="let teachers of teacher">
-     
+      <ion-avatar slot="start" >
+          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      </ion-avatar>
 
       <ion-label class="ion-text-wrap">
           <h3>{{teachers.tea_name}} {{teachers.tea_paternal}}  {{teachers.tea_maternal}}</h3>
           <p>{{teachers.att_date | date:'y-MM-dd'}}</p>
       </ion-label>
 
-      <!-- <ion-badge slot="end">{{alumno.att_fklist}}</ion-badge> -->
+      <ion-badge slot="end">{{teachers.tea_name}}</ion-badge>
     </ion-item>
     <ion-infinite-scroll>
       <ion-infinite-scroll-content></ion-infinite-scroll-content>
