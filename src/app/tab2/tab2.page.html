@@ -1,17 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Code
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-item *ngFor="let codes of code">
+      <ion-accordion-group  >
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-label>First Accordion</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">First Content</div>
+        </ion-accordion>
+
+      </ion-accordion-group>
+
+      <ion-badge slot="end">{{codes.tea_name}}</ion-badge>
+    </ion-item>
+
 </ion-content>
