@@ -1,0 +1,24 @@
+ion-grid {
+    --ion-grid-width: 50%;
+    --ion-grid-width-xs: 50%;
+    --ion-grid-width-sm: 288px;
+    --ion-grid-width-md: 384px;
+    --ion-grid-width-lg: 480px;
+    --ion-grid-width-xl: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  
+ion-button {
+    --color: #fff;
+    --height:20px ;
+    --width:20px ;
+   --text-align: center;
+    --border-radius: 100%;
+ }
+ ion-icon{
+    --width: 20px;
+ }

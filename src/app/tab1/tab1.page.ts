@@ -12,9 +12,9 @@ export class Tab1Page {
   constructor(private loadingCtrl: LoadingController) {}
   teacher: any = [];
   ngOnInit() {
-    this.loadteacher();
+    /* this.loadteacher(); */
   }
-  async loadteacher(event?: InfiniteScrollCustomEvent) {
+  /* async loadteacher(event?: InfiniteScrollCustomEvent) {
     const loading = await this.loadingCtrl.create({
       message: 'Cargando',
       spinner: 'bubbles',
@@ -45,5 +45,5 @@ export class Tab1Page {
     setTimeout(() => {
         (ev as InfiniteScrollCustomEvent).target.complete();
     }, 500);
-}
+} */
 }

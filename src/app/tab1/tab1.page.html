@@ -1,13 +1,12 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Teacher
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar>
+  <ion-title>
+    Teacher
+  </ion-title>
+</ion-toolbar>
+
 
 <ion-content [fullscreen]="true">
-  <ion-list>
+<!--   <ion-list>
     <ion-item button *ngFor="let teachers of teacher">
       <ion-avatar slot="start" >
           <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
@@ -23,6 +22,20 @@
     <ion-infinite-scroll>
       <ion-infinite-scroll-content></ion-infinite-scroll-content>
     </ion-infinite-scroll>
-</ion-list>
+</ion-list> -->
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Grupo</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Here's a small text description for the card content. Nothing more, nothing less.
+  </ion-card-content>
+  <ion-toolbar>
+    <ion-buttons color="primary" slot="end">
+      <ion-button fill="clear">Action 1</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-card>
 
 </ion-content>
