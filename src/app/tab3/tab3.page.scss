@@ -5,11 +5,11 @@ ion-grid {
     --ion-grid-width-md: 384px;
     --ion-grid-width-lg: 480px;
     --ion-grid-width-xl: 570px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    padding: 1rem;
+    --display: flex;
+ --justify-content: center;
+    --align-items: center;
+    --margin-top: 1rem;
+    --padding: 1rem;
   }
   
 ion-button {

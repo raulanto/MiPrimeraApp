@@ -53,3 +53,4 @@ export class Tab2Page {
 //     }, 500);
 // }
 }
+
